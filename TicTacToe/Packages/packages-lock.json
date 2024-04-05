@@ -1,5 +1,17 @@
 {
   "dependencies": {
+    "com.leopotam.ecs": {
+      "version": "file:C:/Users/skv-m/Downloads/ecs-master",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
+    "com.leopotam.ecs-unityintegration": {
+      "version": "file:C:/Users/skv-m/Downloads/ecs-unityintegration-master",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.2d.animation": {
       "version": "9.0.3",
       "depth": 1,
