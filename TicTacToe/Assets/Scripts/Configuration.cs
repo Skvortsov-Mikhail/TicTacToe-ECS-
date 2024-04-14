@@ -8,7 +8,11 @@ namespace TicTacToe
         public int FieldWidth = 3;
         public int FieldHeight = 3;
         public int ChainLength = 3;
+
         public CellView CellView;
         public Vector2 Offset;
+
+        public SignView CrossView;
+        public SignView RingView;
     }
 }

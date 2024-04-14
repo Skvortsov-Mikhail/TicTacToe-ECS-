@@ -6,8 +6,8 @@ namespace TicTacToe
     public class SetCameraSystem : IEcsRunSystem
     {
         private EcsFilter<UpdateCameraEvent> _filter;
-        private SceneData _sceneData;
-        private Configuration _configuration;
+        private SceneData _sceneData = null;
+        private Configuration _configuration = null;
 
         public void Run()
         {

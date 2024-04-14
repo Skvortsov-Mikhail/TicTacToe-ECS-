@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6fb975b2d142b24780c65ea500e2889, type: 3}
   m_Name: Configuration
   m_EditorClassIdentifier: 
-  FieldWidth: 4
-  FieldHeight: 4
+  FieldWidth: 3
+  FieldHeight: 3
   ChainLength: 3
   CellView: {fileID: 5999377596014039708, guid: c5a0821759d84c840b5a34acd24ffb61, type: 3}
   Offset: {x: 0.1, y: 0.1}
+  CrossView: {fileID: 4928830692726274597, guid: 97b194c21265b4147a9da830dd6a7db0, type: 3}
+  RingView: {fileID: 86563983602870689, guid: b9ebe437820748b488685064bd978e1d, type: 3}

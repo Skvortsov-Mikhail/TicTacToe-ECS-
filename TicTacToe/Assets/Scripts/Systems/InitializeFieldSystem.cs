@@ -5,8 +5,9 @@ namespace TicTacToe
 {
     public class InitializeFieldSystem : IEcsInitSystem
     {
-        private Configuration _configuration;
+        private Configuration _configuration = null;
         private EcsWorld _world;
+        private GameState _gameState;
 
         public void Init()
         {
@@ -16,7 +17,11 @@ namespace TicTacToe
                 {
                     var cellEntity = _world.NewEntity();
                     cellEntity.Get<Cell>();
-                    cellEntity.Get<Position>().value = new Vector2Int(x, y);
+
+                    var position = new Vector2Int(x, y);
+                    cellEntity.Get<Position>().value = position;
+
+                    _gameState.Cells[position] = cellEntity;
                 }
             }
 

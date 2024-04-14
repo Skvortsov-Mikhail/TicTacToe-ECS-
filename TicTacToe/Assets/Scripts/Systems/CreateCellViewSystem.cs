@@ -6,7 +6,7 @@ namespace TicTacToe
     public class CreateCellViewSystem : IEcsRunSystem
     {
         private EcsFilter<Cell, Position>.Exclude<CellViewRef> _filter;
-        private Configuration _configuration;
+        private Configuration _configuration = null;
 
         public void Run()
         {
@@ -17,6 +17,8 @@ namespace TicTacToe
                 var cellView = Object.Instantiate(_configuration.CellView);
 
                 cellView.transform.position = new Vector3(position.value.x + _configuration.Offset.x * position.value.x, position.value.y + _configuration.Offset.y * position.value.y);
+
+                cellView.Entity = _filter.GetEntity(index);
 
                 _filter.GetEntity(index).Get<CellViewRef>().value = cellView;
             }
